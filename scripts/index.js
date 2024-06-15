@@ -12,15 +12,15 @@ document.addEventListener("DOMContentLoaded", function() {
     let rowsSection = document.querySelector('.rows-section');
     let tilesSection = document.querySelector('.tiles-section');
 
-    document.body.addEventListener('click', function( event ){
-        if(tilesIconElement.contains(event.target)){
+    document.body.addEventListener('click', function(event) {
+        if (tilesIconElement.contains(event.target)) {
             rowsSection.style.display = 'none';
             tilesSection.style.display = 'block';
             tilesIconElement.classList.add('active');
             rowsIconElement.classList.remove('active')
         }
 
-        if(rowsIconElement.contains(event.target)){
+        if (rowsIconElement.contains(event.target)) {
             rowsSection.style.display = 'block';
             tilesSection.style.display = 'none';
             tilesIconElement.classList.remove('active');
