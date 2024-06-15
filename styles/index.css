@@ -11,8 +11,11 @@ body {
 }
 
 header {
+    box-shadow: 0 12px 24px 0 #0000001F;
+
     min-width: 100%;
     background-color: rgba(255, 255, 255, 0.67);
+    padding-bottom: 15px;
     position: relative;
     z-index: 10;
 }
@@ -65,6 +68,7 @@ header {
 
 .calendars .date {
     color: #636264;
+    cursor: pointer;
     height: 28px;
     width: 162px;
     border: 1px solid #DEDEDE;
@@ -89,3 +93,59 @@ header {
 .calendars p {
     margin-bottom: 0;
 }
+
+.rows-tiles-buttons {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.rows-section .row-item {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.item-info-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.item-reactions {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.item-date {
+    font-weight: bold;
+}
+
+.rows-section {
+    margin-top: 25px;
+}
+
+.today-info {
+    margin-left: 3%;
+}
+
+.main-section {
+    position: relative;
+}
+
+.item-upload {
+    margin-right: 8%;
+}
+
+.bottom-bg {
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+}
+
+/*// filter: invert(87%) sepia(0%) saturate(0%) hue-rotate(348deg) brightness(94%) contrast(89%)*/
+/*filter: invert(49%) sepia(32%) saturate(2400%) hue-rotate(187deg) brightness(94%) contrast(80%);*/
