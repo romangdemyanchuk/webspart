@@ -73,7 +73,7 @@ header {
     width: 162px;
     border: 1px solid #DEDEDE;
     border-radius: 4px;
-    padding: 0;
+    padding: 0 0 0 2px;
 }
 
 .calendar {
@@ -125,7 +125,8 @@ header {
     font-weight: bold;
 }
 
-.rows-section {
+.rows-section,
+.tiles-section {
     margin-top: 25px;
 }
 
@@ -147,5 +148,57 @@ header {
     right: 0;
 }
 
-/*// filter: invert(87%) sepia(0%) saturate(0%) hue-rotate(348deg) brightness(94%) contrast(89%)*/
-/*filter: invert(49%) sepia(32%) saturate(2400%) hue-rotate(187deg) brightness(94%) contrast(80%);*/
+.load-more-button-wrapper {
+    text-align: center;
+}
+
+.load-more-button-wrapper button {
+    border: 1px solid #929292;
+    border-radius: 14px;
+    padding: 3px 15px;
+    color: #929292;
+    background: #fff;
+}
+
+.tiles-section {
+
+}
+
+.tile-item {
+    width: 25%;
+}
+
+.tile-item .item-photo {
+    width: 100%;
+
+}
+
+.tile-item-row-wrapper {
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-top: 10px;
+}
+
+.tile-item-upload {
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-top: 20px;
+}
+
+.tile-section-wrapper {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tiles-section {
+    display: none;
+}
+.active {
+    filter: invert(49%) sepia(32%) saturate(2400%) hue-rotate(187deg) brightness(94%) contrast(80%);
+}
+
+.rows-icon,
+.tiles-icon {
+    cursor: pointer;
+}
