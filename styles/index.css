@@ -20,6 +20,11 @@ header {
     z-index: 10;
 }
 
+.header-container {
+    display: flex;
+    text-align: center;
+}
+
 .header-title {
     font-size: 24px;
     font-weight: 500;
@@ -158,6 +163,7 @@ header {
     padding: 3px 15px;
     color: #929292;
     background: #fff;
+    margin-bottom: 15px;
 }
 
 .tiles-section {
@@ -201,4 +207,51 @@ header {
 .rows-icon,
 .tiles-icon {
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .bottom-bg {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-container {
+        display: block;
+    }
+
+    .header-content {
+        margin-left: 0;
+    }
+
+    .calendars,
+    .item-info-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .calendar {
+        width: 100%;
+    }
+
+    .calendars .date {
+        width: 100%;
+    }
+
+    .rows-section .row-item {
+        display: block;
+    }
+
+    .tile-section-wrapper {
+        display: block;
+    }
+
+    .tile-item {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .left-bg-container img {
+        width: 80%;
+    }
 }
